@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="row">
+    <section class="section">
+        <header>
+            <h3>Register</h3>
+            <h4>Please fill your information bellow</h4>
+        </header>
+        <main>
+            <form>
+                <div class="form-item box-item">
+                    <input type="text" name="name" placeholder="Name" data-required id="name">
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                </div>
+                <div class="form-item box-item">
+                    <input type="email" name="email" placeholder="Email" id="theemail" data-email data-required>
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                    <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+                </div>
+                <div class="form-item box-item">
+                    <div class="form-item-triple">
+                        <div class="radio-label">
+                            <label class="label">Gender</label>
+                        </div>
+                        <div class="form-item">
+                            <input id="male" type="radio" name="gender" value="Male"  data-once>
+                            <label for="Male">Male</label>
+                        </div>
+                        <div class="form-item">
+                            <input id="female" type="radio" name="gender" value="female" data-once>
+                            <label for="Female">Female</label>
+                        </div>
+                    </div>
+                    <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
+                </div>
+
+                <div class="form-item box-item">
+                    <input type="text" name="address" placeholder="Address"  id="address" data-required>
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                </div>
+                <div class="form-item-double box-item">
+                    <div class="form-item ">
+                        <input type="text" name="streetNr" placeholder="Str Number" id="streetNr" data-required data-number>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" name="zipCode" placeholder="Zip Code" id="zipCode" data-required data-number>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                    </div>
+                </div>
+                <div class="form-item box-item">
+                    <input type="text" name="phoneNr" placeholder="Phone" id="phoneNr" data-required data-number data-count="10">
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                    <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                    <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+                </div>
+
+                <button type="submit"> Submit</button>
+                <!-- <div class="form-item">
+                    <span id="submit" class="submit"  onsubmit="myFunction()">Submit</span>
+                </div> -->
+            </form>
+        </main>
+        <footer>
+            <p>Already have an account? <a href="#">Login here</a></p>
+        </footer>
+        <i class="wave"></i>
+    </section>
+</div>
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
