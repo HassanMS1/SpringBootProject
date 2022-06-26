@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("api/ansatte")
 
 public class AnsattController {
-    
+
     private final AnsattService ansattService;
 
     @Autowired
@@ -34,6 +34,7 @@ public class AnsattController {
     }
 
     @PostMapping
+    @CrossOrigin (origins = "http://127.0.0.1:5500")
     public void registerNewAnsatt(@RequestBody Ansatt ansatt)
     // @RequestBody is mapping the incomming object from the Client to class student
     {

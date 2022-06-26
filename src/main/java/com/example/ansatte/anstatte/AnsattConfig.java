@@ -14,8 +14,8 @@ public class AnsattConfig {
     @Bean // this makes so it runs automatically when the app is run
     CommandLineRunner commandLineRunner( AnsattRepository repository){
         return args -> {
-            Ansatt s1 = new Ansatt("Hassan", "hassan@gmail.com", "male", "Stolmakergata", "9d", 1551, 90290980);
-            Ansatt s2 = new Ansatt("Hassan", "hassan@gmail.com", "male", "Stolmakergata", "9d", 1551,9024984);
+            Ansatt s1 = new Ansatt("Per", "per@live.com", "male", "Stolmakergata", "9d", 1551, 90290980);
+            Ansatt s2 = new Ansatt("Karin", "karin@gmail.com", "female", "Oslogata", "9d", 1551,4987815);
 
 
             // this Studenreposity interface will save the objects to the database
